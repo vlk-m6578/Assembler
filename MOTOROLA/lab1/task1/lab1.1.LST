@@ -1,0 +1,9 @@
+  ADDR B1 B2 B3 B4 D:\КПрог\LABS\lab1\1\lab1.1.asm                  PAGE       1
+
+  C000 86 AA        LDAA #$AA
+  C002 C6 55        LDAB #$55
+  C004 36           PSHA
+  C005 37           PSHB
+  C006 32           PULA
+  C007 33           PULB
+  C008 8F           XGDX

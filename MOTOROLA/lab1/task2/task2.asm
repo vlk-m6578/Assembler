@@ -1,0 +1,14 @@
+ LDX #30
+ LDY #40
+ LDD #20
+
+ STX $00
+ STY $02
+ 
+ SUBD $00
+ SUBD $02
+ 
+ PSHA
+ PSHB
+ 
+ SUBD #3

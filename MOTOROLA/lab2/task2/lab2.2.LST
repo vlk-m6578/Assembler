@@ -1,0 +1,24 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+  C000 CE 00 00     LDX #$00
+  C003 18 CE 00 FF  LDY #$FF
+
+                   swap:
+  C007 A6 00        LDAA $0,X
+  C009 18 E6 00     LDAB $0,Y
+  C00C 18 A7 00     STAA $0,Y
+  C00F E7 00        STAB $0,X
+
+  C011 08           INX
+  C012 18 09        DEY
+
+  C014 8C 00 80     CPX #128
+  C017 26 EE        BNE swap
+
+                   end:
+  C019 3F           SWI
+
+  Symbol Table 
+
+  SWAP               C007
+  END                C019

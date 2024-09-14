@@ -1,0 +1,10 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+  C000 CE FF 00     LDX #%1111111100000000
+  C003 FF 80 00     STX $8000
+  C006 CC 0F 0F     LDD #%0000111100001111
+  C009 43           COMA
+  C00A 53           COMB
+  C00B B8 80 00     EORA $8000
+  C00E F8 80 01     EORB $8001
+  C011 8F           XGDX

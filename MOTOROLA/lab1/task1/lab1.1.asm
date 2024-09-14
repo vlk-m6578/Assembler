@@ -1,0 +1,7 @@
+ LDAA #$AA
+ LDAB #$55
+ PSHA
+ PSHB
+ PULA
+ PULB
+ XGDX
