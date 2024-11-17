@@ -1,0 +1,29 @@
+import os
+import random
+import string
+
+def generate_random_word(min_len=3, max_len=10):
+    length = random.randint(min_len, max_len)
+    word = ''.join(random.choices(string.ascii_lowercase, k=length))
+    return word
+
+def generate_line(min_words=9, max_words=15):
+    word_count = random.randint(min_words, max_words)
+    return ' '.join(generate_random_word() for _ in range(word_count)) + '\n'
+
+def create_file(file_name, file_size_kb=64):
+    file_size_bytes = file_size_kb * 1024
+    with open(file_name, 'w') as file:
+        while file.tell() < file_size_bytes:
+            line = generate_line()
+            file.write(line)
+
+def generate_files(num_files, file_size_kb=64):
+    for i in range(1, num_files + 1):
+        file_name = f'random_text_{i}.txt'
+        create_file(file_name, file_size_kb)
+        print(f'Файл {file_name} создан размером {file_size_kb} КБ.')
+
+num_files = 10  #Количество файлов
+generate_files(num_files)
+end
