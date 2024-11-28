@@ -2,4 +2,8 @@
 ----------------------
 ##ПРИМЕЧАНИЯ: rdtsc не возвращает текущее время, а возращает количество тактов процессора; для нахождения времени должна использоваться частота процессора.
 ##Запуск в VS Code на Linux Ubuntu:
-#
+#nasm -f elf64 disk_ping.asm -o disk_ping.o ----> g++ -fPIE -pie main.cpp disk_ping.o -o main ----> ./main
+##Запуск в VS Code через gdb отладчик:
+#nasm -g -F dwarf -f elf64 disk_ping.asm -o disk_ping.o ----> g++ -g -fPIE -pie main.cpp disk_ping.o -o main ----> gbd ./main
+##Таблица системных вызовов Linux
+#https://syscalls.mebeim.net/?table=x86/64/x64/v6.5
