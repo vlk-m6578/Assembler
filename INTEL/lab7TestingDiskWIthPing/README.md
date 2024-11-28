@@ -7,3 +7,7 @@
 #### nasm -g -F dwarf -f elf64 disk_ping.asm -o disk_ping.o ----> g++ -g -fPIE -pie main.cpp disk_ping.o -o main ----> gbd ./main
 ##### Таблица системных вызовов Linux
 #### https://syscalls.mebeim.net/?table=x86/64/x64/v6.5
+##### Расширения для NASM в VS Code:
+![image](https://github.com/user-attachments/assets/2fd9ac26-0bf2-40e8-9887-7be48c95b555)
+
+
