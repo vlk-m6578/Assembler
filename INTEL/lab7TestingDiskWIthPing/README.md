@@ -8,6 +8,9 @@
 ##### Таблица системных вызовов Linux
 #### https://syscalls.mebeim.net/?table=x86/64/x64/v6.5
 ##### Расширения для NASM в VS Code:
-![image](https://github.com/user-attachments/assets/2fd9ac26-0bf2-40e8-9887-7be48c95b555)
+![image](https://github.com/user-attachments/assets/8a7016e5-f82b-493d-a7ba-8ab725378104)
+![image](https://github.com/user-attachments/assets/7a8c4b33-9f82-47b0-9905-71feacb4714c)
+
+
 
 
